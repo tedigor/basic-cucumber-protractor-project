@@ -2,7 +2,15 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
-const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
+const reporter = require('cucumber-html-reporter');
+
+const cucumberReporterOptions = {
+  jsonFile: 'cucumber_report.json',
+  output: 'cucumber_report.html',
+  reportSuiteAsScenarios: true,
+  theme: "bootstrap",
+  launchReport: true
+}; 
 
 /**
  * @type { import("protractor").Config }
@@ -10,27 +18,36 @@ const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './src/**/*.e2e-spec.ts'
+    './src/features/**/**.feature'
   ],
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    'chromeOptions': {
+      args:
+        ['--window-size=1920,1080',
+          '--start-maximized',
+          // '--headless'
+        ]
+    }
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
-  framework: 'jasmine',
-  jasmineNodeOpts: {
-    showColors: true,
-    defaultTimeoutInterval: 30000,
-    print: function() {}
+  ignoreUncaughtExceptions: true,
+  framework: 'custom',
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
+  cucumberOpts: {
+    require: ['./src/steps/**/**.steps.ts'],
+    tags: ['@sites'],
+    // strict: true,
+    format: ['json:cucumber_report.json'],
+    // dryRun: true
   },
   onPrepare() {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json')
     });
-    jasmine.getEnv().addReporter(new SpecReporter({
-      spec: {
-        displayStacktrace: StacktraceOption.PRETTY
-      }
-    }));
-  }
+  },
+  onComplete: () => {
+    reporter.generate(cucumberReporterOptions);
+  },
 };

@@ -1,0 +1,323 @@
+[
+  {
+    "description": "    A funcionalidade deve realizar uma busca no site do google",
+    "keyword": "Funcionalidade",
+    "name": "Acessar site da unifacisa via pesquisa no google",
+    "line": 3,
+    "id": "acessar-site-da-unifacisa-via-pesquisa-no-google",
+    "tags": [
+      {
+        "name": "@sites",
+        "line": 2
+      }
+    ],
+    "uri": "src\\features\\acess-unifacisa.feature",
+    "elements": [
+      {
+        "id": "acessar-site-da-unifacisa-via-pesquisa-no-google;acessar-site-do-unifacisa",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Acessar site do Unifacisa",
+        "tags": [
+          {
+            "name": "@sites",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja no site do google",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "ele digitar 'Unifacisa' no campo de busca",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "submeter a pesquisa",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "o usuário acessar o link 'Unifacisa'",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o site 'Unifacisa' será exibido",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "acessar-site-da-unifacisa-via-pesquisa-no-google;acessar-site-do-unifacisa",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Acessar site do Unifacisa",
+        "tags": [
+          {
+            "name": "@sites",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja no site do google",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "ele digitar 'Anac' no campo de busca",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "submeter a pesquisa",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1080000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "o usuário acessar o link 'Anac'",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3773000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o site 'Anac' será exibido",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "acessar-site-da-unifacisa-via-pesquisa-no-google;acessar-site-do-unifacisa",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Acessar site do Unifacisa",
+        "tags": [
+          {
+            "name": "@sites",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja no site do google",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 775000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 10,
+            "name": "ele digitar 'Bootstrap' no campo de busca",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "submeter a pesquisa",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1410000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 12,
+            "name": "o usuário acessar o link 'Bootstrap'",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 13,
+            "name": "o site 'Bootstrap' será exibido",
+            "match": {
+              "location": "src\\steps\\site.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
