@@ -11,7 +11,7 @@
         "line": 2
       }
     ],
-    "uri": "src\\features\\acess-unifacisa.feature",
+    "uri": "src\\features\\acess-sites.feature",
     "elements": [
       {
         "id": "acessar-site-da-unifacisa-via-pesquisa-no-google;acessar-site-do-unifacisa",
@@ -47,7 +47,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2023000000
+              "duration": 2088000000
             }
           },
           {
@@ -60,7 +60,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 59000000
             }
           },
           {
@@ -73,7 +73,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2053000000
+              "duration": 2302000000
             }
           },
           {
@@ -82,11 +82,11 @@
             "line": 12,
             "name": "o usuário acessar o link 'Unifacisa'",
             "match": {
-              "location": "src\\steps\\site.steps.ts:15"
+              "location": "src\\steps\\site.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3443000000
+              "duration": 3095000000
             }
           },
           {
@@ -95,11 +95,11 @@
             "line": 13,
             "name": "o site 'Unifacisa' será exibido",
             "match": {
-              "location": "src\\steps\\site.steps.ts:19"
+              "location": "src\\steps\\site.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
             }
           },
           {
@@ -135,8 +135,7 @@
               "location": "src\\steps\\config.steps.ts:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -149,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1162000000
+              "duration": 819000000
             }
           },
           {
@@ -162,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 46000000
             }
           },
           {
@@ -175,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1080000000
+              "duration": 1029000000
             }
           },
           {
@@ -184,11 +183,11 @@
             "line": 12,
             "name": "o usuário acessar o link 'Anac'",
             "match": {
-              "location": "src\\steps\\site.steps.ts:15"
+              "location": "src\\steps\\site.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3773000000
+              "duration": 4652000000
             }
           },
           {
@@ -197,11 +196,11 @@
             "line": 13,
             "name": "o site 'Anac' será exibido",
             "match": {
-              "location": "src\\steps\\site.steps.ts:19"
+              "location": "src\\steps\\site.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 6000000
             }
           },
           {
@@ -211,8 +210,7 @@
               "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -237,8 +235,7 @@
               "location": "src\\steps\\config.steps.ts:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -251,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 775000000
+              "duration": 703000000
             }
           },
           {
@@ -264,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 55000000
             }
           },
           {
@@ -277,7 +274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1410000000
+              "duration": 1011000000
             }
           },
           {
@@ -286,11 +283,11 @@
             "line": 12,
             "name": "o usuário acessar o link 'Bootstrap'",
             "match": {
-              "location": "src\\steps\\site.steps.ts:15"
+              "location": "src\\steps\\site.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2944000000
+              "duration": 2966000000
             }
           },
           {
@@ -299,11 +296,115 @@
             "line": 13,
             "name": "o site 'Bootstrap' será exibido",
             "match": {
-              "location": "src\\steps\\site.steps.ts:19"
+              "location": "src\\steps\\site.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 8000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    A funcionalidade simular o funcionamento de um formulário de pagamento",
+    "keyword": "Funcionalidade",
+    "name": "Formulário genérico de pagamento do bootstrap",
+    "line": 3,
+    "id": "formulário-genérico-de-pagamento-do-bootstrap",
+    "tags": [
+      {
+        "name": "@checkoutForm",
+        "line": 2
+      }
+    ],
+    "uri": "src\\features\\checkout-form.feature",
+    "elements": [
+      {
+        "id": "formulário-genérico-de-pagamento-do-bootstrap;preencher-todos-os-campos-e-submeter-corretamente",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Preencher todos os campos e submeter corretamente",
+        "tags": [
+          {
+            "name": "@checkoutForm",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja acessando o fomulário checkout do bootstrap",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "o usuário preencher corretamente todos os campos do formulário",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 810000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 11,
+            "name": "clicar no botão \"Continue to checkout\"",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 12,
+            "name": "os campos serão limpos, indicando sucesso na submissão",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
             }
           },
           {
@@ -314,6 +415,196 @@
             },
             "result": {
               "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "formulário-genérico-de-pagamento-do-bootstrap;validar-obrigatoriedade-do-campo-first-name",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validar obrigatoriedade do campo First Name",
+        "tags": [
+          {
+            "name": "@checkoutForm",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja acessando o fomulário checkout do bootstrap",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 15,
+            "name": "não preencher o campo \"First Name\"",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:45"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "clicar no botão \"Continue to checkout\"",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 17,
+            "name": "a mensagem de erro \"Valid first name is required.\" será exibida",
+            "match": {
+              "location": "src\\steps\\checkout-form.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    A funcionalidade deve realizar uma busca no site do google",
+    "keyword": "Funcionalidade",
+    "name": "Realizar pesquisa no google",
+    "line": 3,
+    "id": "realizar-pesquisa-no-google",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 2
+      }
+    ],
+    "uri": "src\\features\\search.feature",
+    "elements": [
+      {
+        "id": "realizar-pesquisa-no-google;realizar-busca-no-google",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "realizar busca no google",
+        "tags": [
+          {
+            "name": "@search",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\config.steps.ts:4"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que o usuário esteja no site do google",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 450000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 8,
+            "name": "ele digitar \"Unifacisa\" no campo de busca",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 9,
+            "name": "submeter a pesquisa",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1963000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 10,
+            "name": "o link para acessar o site \"Unifacisa\" será exibido",
+            "match": {
+              "location": "src\\steps\\search.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

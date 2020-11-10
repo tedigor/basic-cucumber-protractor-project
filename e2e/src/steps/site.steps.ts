@@ -3,7 +3,7 @@ import { Then, When } from 'cucumber';
 import { browser } from 'protractor';
 import { GooglePo } from '../pages/google.po';
 
-const UNIFACISA_URL = 'https://www.unifacisa.edu.br/home';
+const UNIFACISA_URL = 'https://vestibular.unifacisa.edu.br/acesso';
 const ANAC_URL = 'https://www.anac.gov.br/';
 const BOOTSTRAP_URL = 'https://getbootstrap.com/';
 

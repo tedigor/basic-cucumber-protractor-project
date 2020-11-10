@@ -9,7 +9,15 @@ const cucumberReporterOptions = {
   output: 'cucumber_report.html',
   reportSuiteAsScenarios: true,
   theme: "bootstrap",
-  launchReport: true
+  launchReport: true,
+  metadata: {
+    "App Version":"0.0.1",
+    "Test Environment": "Testing",
+    "Browser": "Chrome 86.0.4240.183",
+    "Platform": "Windows",
+    "Parallel": "Scenarios",
+    "Executed": "Local"
+  }
 }; 
 
 /**
@@ -24,9 +32,12 @@ exports.config = {
     browserName: 'chrome',
     'chromeOptions': {
       args:
-        ['--window-size=1920,1080',
+        [
           '--start-maximized',
-          // '--headless'
+          'incognito',
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-gpu'
         ]
     }
   },
@@ -37,7 +48,7 @@ exports.config = {
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
     require: ['./src/steps/**/**.steps.ts'],
-    tags: ['@sites'],
+    tags: [],
     // strict: true,
     format: ['json:cucumber_report.json'],
     // dryRun: true

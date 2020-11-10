@@ -1,7 +1,10 @@
-import { by, element } from 'protractor';
+import { browser, by, element, ElementFinder } from 'protractor';
 import { testHelpers } from '../utils/test-helpers';
 
 export class CheckoutFormPo {
+    
+    url = 'https://getbootstrap.com/docs/4.5/examples/checkout/';
+    
     labels = {
         'First name': 'firstName',
         'Last name': 'lastName',
@@ -57,27 +60,27 @@ export class CheckoutFormPo {
         paypal: testHelpers.getElementById('paypal')
     };
 
-    getButton(name: string) {
+    getButton(name: string): ElementFinder {
         return this.buttons[this.labels[name]];
     };
 
-    getInput(name: string) {
+    getInput(name: string): ElementFinder {
         return this.inputs[this.labels[name]];
     };
 
-    getSelect(name: string) {
+    getSelect(name: string): ElementFinder {
         return this.selects[this.labels[name]];
     };
 
-    getCheckBox(name: string) {
+    getCheckBox(name: string): ElementFinder {
         return name === 'Same Adress'? this.checkBox.sameAdress : this.checkBox.saveInfo;
     };
 
-    getPayment(name: string) {
+    getPayment(name: string): ElementFinder {
         switch (name) {
-            case 'Crédito':
+            case 'Credit':
                 return this.paymentType.credit;
-            case 'Débito':
+            case 'Debit':
                 return this.paymentType.debit;
             case 'Paypal':
                 return this.paymentType.paypal;
@@ -86,5 +89,31 @@ export class CheckoutFormPo {
         }
     }
 
+    async fillInputWithValue(inputName: string, value: string) {
+        await this.getInput(inputName).sendKeys(value);
+    }
 
+    async selectOption(selectName: string, value: string) {
+        await this.getSelect(selectName).click();
+        await testHelpers.visibilityOf(element.all(by.tagName('option')).first());
+        await testHelpers.getElementByText('option', value);
+    }
+
+    async clickOnButton(buttonName: string) {
+        await this.getButton(buttonName).click();
+    }
+
+    async selectCheckBox(checkBoxName: string) {
+        await this.getCheckBox(checkBoxName).click();
+    }
+
+    async selectPayment(paymentType: string) {
+        await this.getPayment(paymentType).click();
+    }
+
+    getFirstNameErroMessage() {
+        // await testHelpers.visibilityOf(element.all(by.className('invalid-feedback')).first());
+        return element.all(by.css('.invalid-feedback')).first().getText();
+        // await testHelpers.visibilityOf(testHelpers.getElementByText('.invalid-feedback', message));
+    }
 }

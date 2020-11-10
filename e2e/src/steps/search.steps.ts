@@ -5,7 +5,7 @@ import { testHelpers } from '../utils/test-helpers';
 
 
 const googlePage: GooglePo = new GooglePo();
-const resultSearch = 'Unifacisa, o melhor Centro Universitário do Norte/Nordeste';
+const resultSearch = 'Bem-vindo a Unifacisa - Estudar em Campina Grande';
 
 Given('que o usuário esteja no site do google', async function () {
     await testHelpers.navigateTo(googlePage.url);
